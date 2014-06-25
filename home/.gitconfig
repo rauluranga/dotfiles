@@ -1,0 +1,9 @@
+[user]
+	name = Raul Uranga
+	email = ruranga@gmail.com
+[credential]
+	helper = osxkeychain
+[github]
+	user = rauluranga
+[merge]
+	tool = opendiff
