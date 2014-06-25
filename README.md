@@ -1,12 +1,12 @@
 ##usage :
 
-#install homebrew
+##install homebrew
 
 ```bash
 $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 ```
 
-#install rbenv & ruby
+##install rbenv & ruby
 
 ```bash
 $ brew update

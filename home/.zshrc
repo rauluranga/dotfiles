@@ -80,5 +80,4 @@ export LANG=en_US.UTF-8
 alias rake='noglob rake'
 alias tmux='tmux -2'
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH="$HOME/.rbenv/bin:$PATH # Add rbenv to PATH for scripting
+export PATH="$HOME/.rbenv/bin:$PATH" #Add rbenv to PATH for scripting
