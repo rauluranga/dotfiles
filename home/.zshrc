@@ -81,3 +81,6 @@ alias rake='noglob rake'
 alias tmux='tmux -2'
 
 export PATH="$HOME/.rbenv/bin:$PATH" #Add rbenv to PATH for scripting
+
+# optionally set DEFAULT_USER in ~/.zshrc to your regular username to hide the “user@hostname” info when you’re logged in as yourself on your local machine.
+DEFAULT_USER=`whoami`
