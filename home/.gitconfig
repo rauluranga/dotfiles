@@ -7,16 +7,16 @@
 	user = rauluranga
 [mergetool]
   keepBackup = false
-  trustExitCode = true
 [mergetool "opendiff"]
-     cmd = "opendiff \"$LOCAL\" \"$REMOTE\" -merge \"$MERGED\""	
+	cmd = "opendiff \"$LOCAL\" \"$REMOTE\" -merge \"$MERGED\""	
 [difftool "Kaleidoscope"]
   #Usage git difftool -y -t Kaleidoscope
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [mergetool "Kaleidoscope"]
   #Usage git mergetool -y -t Kaleidoscope
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
 [merge]
-    tool = opendiff
+	tool = opendiff
 [diff]
-    tool = opendiff
+	tool = opendiff
