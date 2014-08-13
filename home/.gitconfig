@@ -8,7 +8,8 @@
 [mergetool]
   keepBackup = false
 [mergetool "opendiff"]
-	cmd = "opendiff \"$LOCAL\" \"$REMOTE\" -merge \"$MERGED\""	
+	cmd = "opendiff \"$LOCAL\" \"$REMOTE\" -merge \"$MERGED\""
+	trustExitCode = true	
 [difftool "Kaleidoscope"]
   #Usage git difftool -y -t Kaleidoscope
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
