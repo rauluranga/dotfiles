@@ -87,4 +87,4 @@ DEFAULT_USER=`whoami`
 
 if [ -f ~/.base.conf ]; then
     source ~/.base.conf
-
+fi
