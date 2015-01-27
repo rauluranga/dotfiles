@@ -89,4 +89,11 @@ DEFAULT_USER=`whoami`
 if [ -f ~/.base.conf ]; then
     source ~/.base.conf
 fi
+
 export EDITOR=/usr/bin/vim
+
+# load tmuxinator config if available
+if [ -f ~/.tmuxinator.conf ]; then
+    source ~/.tmuxinator.conf
+fi
+
