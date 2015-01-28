@@ -40,7 +40,7 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew vagrant git-flow brew-cask tmux bower npm git-extras)
+plugins=(git brew vagrant git-flow brew-cask tmux bower npm git-extras tmuxinator)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -91,9 +91,3 @@ if [ -f ~/.base.conf ]; then
 fi
 
 export EDITOR=/usr/bin/vim
-
-# load tmuxinator config if available
-if [ -f ~/.tmuxinator.conf ]; then
-    source ~/.tmuxinator.conf
-fi
-
