@@ -72,7 +72,7 @@ if which rbenv &>/dev/null ; then
 fi
 
 # Customize to your needs...
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
