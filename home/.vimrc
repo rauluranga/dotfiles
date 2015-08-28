@@ -42,6 +42,8 @@
  NeoBundle 'mattn/emmet-vim'
  NeoBundle 'tpope/vim-rails'
  NeoBundle 'tpope/vim-bundler'
+ NeoBundle 'vim-scripts/Rename2'
+ 
 
  call neobundle#end()
 
