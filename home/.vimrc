@@ -42,6 +42,7 @@
  NeoBundle 'mattn/emmet-vim'
  NeoBundle 'tpope/vim-rails'
  NeoBundle 'tpope/vim-bundler'
+ NeoBundle 'terryma/vim-multiple-cursors'
  NeoBundle 'vim-scripts/Rename2'
  
 
