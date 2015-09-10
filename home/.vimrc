@@ -44,6 +44,8 @@
  NeoBundle 'tpope/vim-bundler'
  NeoBundle 'terryma/vim-multiple-cursors'
  NeoBundle 'vim-scripts/Rename2'
+ NeoBundle 'ervandew/supertab'
+
  
 
  call neobundle#end()
