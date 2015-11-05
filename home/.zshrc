@@ -91,3 +91,8 @@ if [ -f ~/.base.conf ]; then
 fi
 
 export EDITOR=/usr/bin/vim
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+
