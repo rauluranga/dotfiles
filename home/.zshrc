@@ -95,8 +95,8 @@ export EDITOR=/usr/bin/vim
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-export JAVA_HOME=\$(/usr/libexec/java_home)
-export ANDROID_HOME=~/android/android-sdk
+export JAVA_HOME=$(/usr/libexec/java_home)
+export ANDROID_HOME=$HOME/android/android-sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 
