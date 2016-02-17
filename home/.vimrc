@@ -45,9 +45,17 @@
  NeoBundle 'terryma/vim-multiple-cursors'
  NeoBundle 'vim-scripts/Rename2'
  NeoBundle 'ervandew/supertab'
+ 
  NeoBundle 'vim-airline/vim-airline'
  NeoBundle 'vim-airline/vim-airline-themes'
  NeoBundle 'tpope/vim-fugitive'
+
+ NeoBundle 'Shougo/vimproc.vim'
+ NeoBundle 'Shougo/neocomplete.vim'
+ NeoBundle 'thinca/vim-quickrun'
+ NeoBundle 'thinca/vim-ref'
+ NeoBundle 'osyo-manga/shabadou.vim'
+ NeoBundle 'osyo-manga/vim-watchdogs'
  
  call neobundle#end()
 
