@@ -50,7 +50,6 @@
  NeoBundle 'vim-airline/vim-airline-themes'
  NeoBundle 'tpope/vim-fugitive'
 
- NeoBundle 'Shougo/vimproc.vim'
  NeoBundle 'Shougo/neocomplete.vim'
  NeoBundle 'thinca/vim-quickrun'
  NeoBundle 'thinca/vim-ref'
