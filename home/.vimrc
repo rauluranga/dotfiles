@@ -45,9 +45,10 @@
  NeoBundle 'terryma/vim-multiple-cursors'
  NeoBundle 'vim-scripts/Rename2'
  NeoBundle 'ervandew/supertab'
-
+ NeoBundle 'vim-airline/vim-airline'
+ NeoBundle 'vim-airline/vim-airline-themes'
+ NeoBundle 'tpope/vim-fugitive'
  
-
  call neobundle#end()
 
  " Required:
@@ -66,24 +67,44 @@
  " use zsh for shell (:sh)
  set shell=/bin/zsh
 
- " Always show current position
- set ruler
- 
- " Line numbers
- set number
+ " General settings
+ set nocompatible
+ set encoding=utf8
 
- " Enable syntax highlighting
+ " Filetype
+ filetype plugin on
  syntax on
  syntax enable
-  
- " Set utf8 as standard encoding and en_US as the standard language
- set encoding=utf8
- 
+ set backspace=indent,eol,start
+ set tabstop=2
+ set softtabstop=2
+ set expandtab
+ set autoindent
+
+ " Search
+ set hlsearch
+ set incsearch
+ set smartcase
+ set ignorecase
+
+ " Layout
+ set ruler
+ set number
+ set laststatus=2
+ set noshowmode
+
  " Colors
  set t_Co=256
  set background=dark
- colorscheme base16-ocean 
+ colorscheme base16-ocean
+ set fillchars+=stl:\ ,stlnc:\
+ set term=xterm-256color
+ set termencoding=utf8
 
- " Set utf8 as standard encoding and en_US as the standard language
- set encoding=utf8
+ " Navigation (Do you have mouse enabled in your term?)
+ " set mouse=a
+
+ " Airline
+ let g:airline_powerline_fonts = 1
+ let g:airline_theme='base16_eighties'
 
