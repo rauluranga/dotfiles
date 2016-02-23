@@ -99,10 +99,13 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export ANDROID_HOME=$HOME/android/android-sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
-
-
 ###-tns-completion-start-###
 if [ -f /Users/raul/.tnsrc ]; then 
     source /Users/raul/.tnsrc 
 fi
 ###-tns-completion-end-###
+
+###-Base16-Shell
+BASE16_SHELL="$HOME/.config/base16-shell/base16-ocean.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
