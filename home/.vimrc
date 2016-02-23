@@ -1,4 +1,16 @@
-"Note: Skip initialization for vim-tiny or vim-small.
+
+ "Check if NeoBundle is installed
+ let iCanHazNeoBundle=1
+ let neobundle_readme=expand($HOME.'/.vim/bundle/neobundle.vim/README.md')
+ if !filereadable(neobundle_readme)
+   echo "Installing NeoBundle.."
+   echo ""
+   silent !mkdir -p $HOME/.vim/bundle
+   silent !git clone https://github.com/Shougo/neobundle.vim $HOME/.vim/bundle/neobundle.vim
+   let iCanHazNeoBundle=0
+ endif
+
+ "Note: Skip initialization for vim-tiny or vim-small.
  if !1 | finish | endif
 
  if has('vim_starting')
