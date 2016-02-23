@@ -78,11 +78,13 @@
  NeoBundleCheck
 
  "nnoremap <C-p> :Unite -start-insert file file_rec buffer everything<cr>
- nnoremap <C-p> :Unite -start-insert file file_rec buffer
+ call unite#filters#matcher_default#use(['matcher_fuzzy'])
+ nnoremap <C-p> :Unite -start-insert file_rec/async<cr>
+ nnoremap <C-b> :Unite -start-insert buffer
  nnoremap <space>/ :Unite -start-insert grep:.<cr>
  nnoremap <space>l :Unite -start-insert line<cr>
- call unite#custom#source('file_rec', 'ignore_globs', ['node_modules/**','bower_components/**', '.idea/**', '.git/**'])
- call unite#custom#source('grep', 'ignore_globs', ['node_modules/**','bower_components/**', '.idea/**', '.git/**']) 
+ call unite#custom#source('file_rec', 'ignore_globs', ['_build/**', 'deps/**','node_modules/**','bower_components/**', '.idea/**', '.git/**'])
+ call unite#custom#source('grep', 'ignore_globs', ['_build/**', 'deps/**','node_modules/**','bower_components/**', '.idea/**', '.git/**']) 
  " use zsh for shell (:sh)
  set shell=/bin/zsh
 
