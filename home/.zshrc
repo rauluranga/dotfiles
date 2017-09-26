@@ -40,8 +40,7 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew vagrant git-flow brew-cask tmux bower npm git-extras tmuxinator)
-
+plugins=(git brew vagrant git-flow brew-cask tmux bower npm git-extras tmuxinator zsh-nvm mix)
 source $ZSH/oh-my-zsh.sh
 
 # -------------------------------------------------------------------
@@ -66,13 +65,9 @@ alias gf='git reflog'
 # leverage an alias from the ~/.gitconfig
 alias gh='git hist'
 
-# load rbenv if available
-if which rbenv &>/dev/null ; then
-  eval "$(rbenv init - --no-rehash)"
-fi
-
 # Customize to your needs...
 export PATH=/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH="/usr/local/sbin:$PATH"
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -81,6 +76,11 @@ alias rake='noglob rake'
 alias tmux='tmux -2'
 
 export PATH="$HOME/.rbenv/bin:$PATH" #Add rbenv to PATH for scripting
+
+# load rbenv if available
+if which rbenv &>/dev/null ; then
+  eval "$(rbenv init - --no-rehash)"
+fi
 
 # optionally set DEFAULT_USER in ~/.zshrc to your regular username to hide the “user@hostname” info when you’re logged in as yourself on your local machine.
 DEFAULT_USER=`whoami`
@@ -92,8 +92,8 @@ fi
 
 export EDITOR=/usr/bin/vim
 
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 export ANDROID_HOME=$HOME/android/android-sdk
@@ -108,4 +108,3 @@ fi
 ###-Base16-Shell
 BASE16_SHELL="$HOME/.config/base16-shell/base16-ocean.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
-
