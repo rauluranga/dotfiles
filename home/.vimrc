@@ -62,12 +62,17 @@
  NeoBundle 'vim-airline/vim-airline-themes'
  NeoBundle 'tpope/vim-fugitive'
 
- NeoBundle 'Shougo/neocomplete.vim'
- NeoBundle 'thinca/vim-quickrun'
- NeoBundle 'thinca/vim-ref'
- NeoBundle 'osyo-manga/shabadou.vim'
- NeoBundle 'osyo-manga/vim-watchdogs'
- 
+ NeoBundle 'liquidz/vivi.vim', {
+     \ 'depends': [
+     \   'elixir-lang/vim-elixir',
+     \   'Shougo/vimproc.vim',
+     \   'Shougo/neocomplete.vim',
+     \   'thinca/vim-quickrun',
+     \   'thinca/vim-ref',
+     \   'osyo-manga/shabadou.vim',
+     \   'osyo-manga/vim-watchdogs'
+     \ ]}
+
  call neobundle#end()
 
  " Required:
