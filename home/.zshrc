@@ -100,8 +100,8 @@ export ANDROID_HOME=$HOME/android/android-sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 ###-tns-completion-start-###
-if [ -f /Users/raul/.tnsrc ]; then 
-    source /Users/raul/.tnsrc 
+if [ -f $HOME/.tnsrc ]; then 
+    source $HOME/.tnsrc 
 fi
 ###-tns-completion-end-###
 
