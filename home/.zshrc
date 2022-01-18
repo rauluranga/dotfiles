@@ -110,6 +110,9 @@ export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 BASE16_SHELL="$HOME/.config/base16-shell/base16-ocean.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
+###-Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 ###-Disable auto change dir
 # unsetopt AUTO_CD
 
