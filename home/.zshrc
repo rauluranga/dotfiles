@@ -40,7 +40,7 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew vagrant git-flow tmux bower npm git-extras tmuxinator mix)
+plugins=(git brew vagrant git-flow tmux npm git-extras tmuxinator mix)
 source $ZSH/oh-my-zsh.sh
 
 # -------------------------------------------------------------------
@@ -101,9 +101,9 @@ export ANDROID_HOME=$HOME/android/android-sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 ###-tns-completion-start-###
-if [ -f $HOME/.tnsrc ]; then 
-    source $HOME/.tnsrc 
-fi
+# if [ -f $HOME/.tnsrc ]; then 
+#     source $HOME/.tnsrc 
+# fi
 ###-tns-completion-end-###
 
 ###-Base16-Shell
